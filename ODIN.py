@@ -19,6 +19,7 @@ data = np.reshape(data,(-1,1))
 
 odin = ODIN.Meandist(K, len(data_error))
 result,weight = odin.fit(data)
+
 print("ODIN error percentge ", FF.correct_percentate(raw_data[sorted(result)],data_error))
 
 plt.plot(data)
